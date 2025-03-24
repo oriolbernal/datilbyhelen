@@ -5,18 +5,19 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import cakes from "@/data/cakes.json";
 
-export function generateStaticParams() {
+export function generateStaticParams(): { slug: string }[] {
   return cakes.map((cake) => ({
     slug: cake.slug,
   }));
 }
 
-export default function CakeDetailPage({
+export default async function CakeDetailPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const cakeDetails = cakes.find((cake) => cake.slug === params.slug);
+  const { slug } = await params;
+  const cakeDetails = cakes.find((cake) => cake.slug === slug);
   if (!cakeDetails) {
     return <div>Pastís no trobat</div>;
   }

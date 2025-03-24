@@ -1,55 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import cakes2 from "@/data/cakes.json";
+import cakes from "@/data/cakes.json";
 
 export default function CakesPage() {
-  // This would normally come from a database or CMS
-  const cakes = [
-    {
-      id: 1,
-      name: "Pastís Fluffy de Xocolata",
-      slug: "pastis-fluffy-xocolata",
-      price: "45,00€",
-      image: "/images/products.png",
-    },
-    {
-      id: 2,
-      name: "Pastís de Carbassó i Cacau",
-      slug: "pastis-carbasso-cacau",
-      price: "40,00€",
-      image: "/images/pantone.png",
-    },
-    {
-      id: 3,
-      name: "Pastís Personalitzat",
-      slug: "pastis-personalitzat",
-      price: "Des de 50,00€",
-      image: "/images/treballem.png",
-    },
-    {
-      id: 4,
-      name: "Pastís de Fruites",
-      slug: "pastis-fruites",
-      price: "35,00€",
-      image: "/images/products.png",
-    },
-    {
-      id: 5,
-      name: "Pastís de Vainilla",
-      slug: "pastis-vainilla",
-      price: "40,00€",
-      image: "/images/pantone.png",
-    },
-    {
-      id: 6,
-      name: "Pastís d'Aniversari",
-      slug: "pastis-aniversari",
-      price: "45,00€",
-      image: "/images/products.png",
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-white">
       <div className="container px-4 py-8 mx-auto">
@@ -72,7 +26,7 @@ export default function CakesPage() {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {cakes2.map((cake) => (
+          {cakes.map((cake) => (
             <Link key={cake.id} href={`/cakes/${cake.slug}`} className="group">
               <div className="overflow-hidden rounded-lg border shadow-sm">
                 <div className="relative aspect-square">
