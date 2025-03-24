@@ -50,9 +50,11 @@ export default function Home() {
               Contacte
             </Link>
           </nav>
-          <Button className="bg-datil-yellow hover:bg-datil-yellow/90 text-white">
-            Fer un encàrrec
-          </Button>
+          <Link href="/cakes/" className="group">
+            <Button className="bg-datil-yellow hover:bg-datil-yellow/90 text-white">
+              Demana el teu pastís
+            </Button>
+          </Link>
         </div>
       </header>
 
