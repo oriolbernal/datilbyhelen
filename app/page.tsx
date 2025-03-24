@@ -1,8 +1,8 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Instagram, Mail, MapPin, Heart } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import Image from "next/image";
+import Link from "next/link";
+import { Instagram, Mail, MapPin, Heart } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function Home() {
   return (
@@ -11,24 +11,48 @@ export default function Home() {
       <header className="sticky top-0 z-40 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Image src="/images/logo.png" alt="Dàtil Logo" width={40} height={40} className="h-8 w-auto" />
-            <span className="font-serif text-xl font-bold text-datil-brown">DÀTIL</span>
+            <Image
+              src={`${
+                process.env.NODE_ENV === "production" ? "/datilbyhelen" : ""
+              }/images/logo.png`}
+              alt="Dàtil Logo"
+              width={40}
+              height={40}
+              className="h-8 w-auto"
+            />
+            <span className="font-serif text-xl font-bold text-datil-brown">
+              DÀTIL
+            </span>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
-            <Link href="#about" className="font-medium transition-colors hover:text-datil-yellow">
+            <Link
+              href="#about"
+              className="font-medium transition-colors hover:text-datil-yellow"
+            >
               Qui som
             </Link>
-            <Link href="#products" className="font-medium transition-colors hover:text-datil-yellow">
+            <Link
+              href="#products"
+              className="font-medium transition-colors hover:text-datil-yellow"
+            >
               Productes
             </Link>
-            <Link href="#order" className="font-medium transition-colors hover:text-datil-yellow">
+            <Link
+              href="#order"
+              className="font-medium transition-colors hover:text-datil-yellow"
+            >
               Encàrrecs
             </Link>
-            <Link href="#contact" className="font-medium transition-colors hover:text-datil-yellow">
+            <Link
+              href="#contact"
+              className="font-medium transition-colors hover:text-datil-yellow"
+            >
               Contacte
             </Link>
           </nav>
-          <Button className="bg-datil-yellow hover:bg-datil-yellow/90 text-white">Fer un encàrrec</Button>
+          <Button className="bg-datil-yellow hover:bg-datil-yellow/90 text-white">
+            Fer un encàrrec
+          </Button>
         </div>
       </header>
 
@@ -45,10 +69,14 @@ export default function Home() {
                   Feta per encàrrec per a tota la família
                 </p>
                 <p className="mt-6 text-muted-foreground md:text-lg">
-                  Dolços ecològics i sense sucre, elaborats amb ingredients naturals i molt d&apos;amor.
+                  Dolços ecològics i sense sucre, elaborats amb ingredients
+                  naturals i molt d&apos;amor.
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-datil-yellow hover:bg-datil-yellow/90 text-white" size="lg">
+                  <Button
+                    className="bg-datil-yellow hover:bg-datil-yellow/90 text-white"
+                    size="lg"
+                  >
                     Veure productes
                   </Button>
                   <Button
@@ -62,7 +90,9 @@ export default function Home() {
               </div>
               <div className="relative">
                 <Image
-                  src="/images/hero-banner.png"
+                  src={`${
+                    process.env.NODE_ENV === "production" ? "/datilbyhelen" : ""
+                  }/images/hero-banner.png`}
                   alt="Dàtil Rebosteria Orgànica"
                   width={600}
                   height={600}
@@ -80,7 +110,9 @@ export default function Home() {
             <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
               <div className="relative">
                 <Image
-                  src="/images/illustrations.png"
+                  src={`${
+                    process.env.NODE_ENV === "production" ? "/datilbyhelen" : ""
+                  }/images/illustrations.png`}
                   alt="Dàtil illustrations"
                   width={600}
                   height={600}
@@ -92,12 +124,14 @@ export default function Home() {
                   Qui som
                 </h2>
                 <p className="mt-4 text-muted-foreground md:text-lg">
-                  A Dàtil elaborem dolços ecològics i sense sucre, pensats per a tothom qui vol gaudir d&apos;un plaer
-                  dolç sense renunciar a una alimentació saludable.
+                  A Dàtil elaborem dolços ecològics i sense sucre, pensats per a
+                  tothom qui vol gaudir d&apos;un plaer dolç sense renunciar a
+                  una alimentació saludable.
                 </p>
                 <p className="mt-4 text-muted-foreground md:text-lg">
-                  Tots els nostres productes estan fets amb ingredients 100% naturals i orgànics, seleccionats amb cura
-                  per oferir el millor sabor i qualitat.
+                  Tots els nostres productes estan fets amb ingredients 100%
+                  naturals i orgànics, seleccionats amb cura per oferir el
+                  millor sabor i qualitat.
                 </p>
                 <p className="mt-4 text-muted-foreground md:text-lg flex items-center">
                   <Heart className="h-5 w-5 mr-2 text-datil-orange" />
@@ -116,7 +150,8 @@ export default function Home() {
                 Els nostres productes
               </h2>
               <p className="mt-4 max-w-[700px] text-muted-foreground md:text-lg">
-                Dolços ecològics i sense sucre, elaborats amb ingredients naturals
+                Dolços ecològics i sense sucre, elaborats amb ingredients
+                naturals
               </p>
             </div>
 
@@ -124,16 +159,23 @@ export default function Home() {
               <Card className="overflow-hidden border-none shadow-lg">
                 <div className="relative h-[250px] w-full">
                   <Image
-                    src="/images/products.png"
+                    src={`${
+                      process.env.NODE_ENV === "production"
+                        ? "/datilbyhelen"
+                        : ""
+                    }/images/products.png`}
                     alt="Dolços ecològics i sense sucre"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="font-serif text-xl font-bold text-datil-brown mb-2">Dolços variats</h3>
+                  <h3 className="font-serif text-xl font-bold text-datil-brown mb-2">
+                    Dolços variats
+                  </h3>
                   <p className="text-muted-foreground">
-                    Donuts, cookies i muffins elaborats amb ingredients ecològics i endolcits de forma natural.
+                    Donuts, cookies i muffins elaborats amb ingredients
+                    ecològics i endolcits de forma natural.
                   </p>
                 </CardContent>
               </Card>
@@ -141,16 +183,23 @@ export default function Home() {
               <Card className="overflow-hidden border-none shadow-lg">
                 <div className="relative h-[250px] w-full">
                   <Image
-                    src="/images/pantone.png"
+                    src={`${
+                      process.env.NODE_ENV === "production"
+                        ? "/datilbyhelen"
+                        : ""
+                    }/images/pantone.png`}
                     alt="Pa de pessic de carbassó i cacau"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="font-serif text-xl font-bold text-datil-brown mb-2">Pa de pessic</h3>
+                  <h3 className="font-serif text-xl font-bold text-datil-brown mb-2">
+                    Pa de pessic
+                  </h3>
                   <p className="text-muted-foreground">
-                    Pa de pessic de carbassó i cacau, humit i saborós, perfecte per a qualsevol moment del dia.
+                    Pa de pessic de carbassó i cacau, humit i saborós, perfecte
+                    per a qualsevol moment del dia.
                   </p>
                 </CardContent>
               </Card>
@@ -158,7 +207,11 @@ export default function Home() {
               <Card className="overflow-hidden border-none shadow-lg">
                 <div className="relative h-[250px] w-full bg-datil-beige/30 flex items-center justify-center">
                   <Image
-                    src="/images/treballem.png"
+                    src={`${
+                      process.env.NODE_ENV === "production"
+                        ? "/datilbyhelen"
+                        : ""
+                    }/images/treballem.png`}
                     alt="Treballem per encàrrec"
                     width={300}
                     height={300}
@@ -166,9 +219,12 @@ export default function Home() {
                   />
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="font-serif text-xl font-bold text-datil-brown mb-2">Personalitzats</h3>
+                  <h3 className="font-serif text-xl font-bold text-datil-brown mb-2">
+                    Personalitzats
+                  </h3>
                   <p className="text-muted-foreground">
-                    Pastissos i dolços personalitzats per a celebracions especials, adaptats a les teves necessitats.
+                    Pastissos i dolços personalitzats per a celebracions
+                    especials, adaptats a les teves necessitats.
                   </p>
                 </CardContent>
               </Card>
@@ -193,9 +249,12 @@ export default function Home() {
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-datil-yellow text-white mb-4">
                   <span className="text-2xl font-bold">1</span>
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-datil-brown">Contacta&apos;ns</h3>
+                <h3 className="text-xl font-bold mb-2 text-datil-brown">
+                  Contacta&apos;ns
+                </h3>
                 <p className="text-muted-foreground">
-                  Envia&apos;ns un missatge a través d&apos;Instagram o per correu electrònic explicant què necessites.
+                  Envia&apos;ns un missatge a través d&apos;Instagram o per
+                  correu electrònic explicant què necessites.
                 </p>
               </div>
 
@@ -203,9 +262,12 @@ export default function Home() {
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-datil-orange text-white mb-4">
                   <span className="text-2xl font-bold">2</span>
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-datil-brown">Personalització</h3>
+                <h3 className="text-xl font-bold mb-2 text-datil-brown">
+                  Personalització
+                </h3>
                 <p className="text-muted-foreground">
-                  Parlarem sobre els teus gustos, necessitats dietètiques i la data de lliurament.
+                  Parlarem sobre els teus gustos, necessitats dietètiques i la
+                  data de lliurament.
                 </p>
               </div>
 
@@ -213,15 +275,21 @@ export default function Home() {
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-datil-blue text-white mb-4">
                   <span className="text-2xl font-bold">3</span>
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-datil-brown">Recollida</h3>
+                <h3 className="text-xl font-bold mb-2 text-datil-brown">
+                  Recollida
+                </h3>
                 <p className="text-muted-foreground">
-                  Un cop confirmat l&apos;encàrrec, podràs recollir els teus dolços en la data acordada.
+                  Un cop confirmat l&apos;encàrrec, podràs recollir els teus
+                  dolços en la data acordada.
                 </p>
               </div>
             </div>
 
             <div className="mt-12 flex justify-center">
-              <Button className="bg-datil-yellow hover:bg-datil-yellow/90 text-white" size="lg">
+              <Button
+                className="bg-datil-yellow hover:bg-datil-yellow/90 text-white"
+                size="lg"
+              >
                 Fer un encàrrec
               </Button>
             </div>
@@ -236,14 +304,17 @@ export default function Home() {
                 Segueix-nos a Instagram
               </h2>
               <p className="mt-4 max-w-[700px] text-muted-foreground md:text-lg">
-                <span className="font-medium">@datilbyhelen</span> - Descobreix les nostres creacions
+                <span className="font-medium">@datilbyhelen</span> - Descobreix
+                les nostres creacions
               </p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="relative aspect-square overflow-hidden rounded-md">
                 <Image
-                  src="/images/products.png"
+                  src={`${
+                    process.env.NODE_ENV === "production" ? "/datilbyhelen" : ""
+                  }/images/products.png`}
                   alt="Instagram post"
                   fill
                   className="object-cover transition-transform duration-300 hover:scale-105"
@@ -251,7 +322,9 @@ export default function Home() {
               </div>
               <div className="relative aspect-square overflow-hidden rounded-md">
                 <Image
-                  src="/images/pantone.png"
+                  src={`${
+                    process.env.NODE_ENV === "production" ? "/datilbyhelen" : ""
+                  }/images/pantone.png`}
                   alt="Instagram post"
                   fill
                   className="object-cover transition-transform duration-300 hover:scale-105"
@@ -259,7 +332,9 @@ export default function Home() {
               </div>
               <div className="relative aspect-square overflow-hidden rounded-md">
                 <Image
-                  src="/images/illustrations.png"
+                  src={`${
+                    process.env.NODE_ENV === "production" ? "/datilbyhelen" : ""
+                  }/images/illustrations.png`}
                   alt="Instagram post"
                   fill
                   className="object-cover transition-transform duration-300 hover:scale-105"
@@ -267,7 +342,9 @@ export default function Home() {
               </div>
               <div className="relative aspect-square overflow-hidden rounded-md">
                 <Image
-                  src="/images/reels-cover.png"
+                  src={`${
+                    process.env.NODE_ENV === "production" ? "/datilbyhelen" : ""
+                  }/images/reels-cover.png`}
                   alt="Instagram post"
                   fill
                   className="object-cover transition-transform duration-300 hover:scale-105"
@@ -315,7 +392,10 @@ export default function Home() {
                     "La millor rebosteria ecològica que hem provat. Ingredients de primera qualitat i un sabor excepcional.",
                 },
               ].map((testimonial, index) => (
-                <Card key={index} className="text-center p-6 border-none shadow-md">
+                <Card
+                  key={index}
+                  className="text-center p-6 border-none shadow-md"
+                >
                   <CardContent className="pt-6">
                     <div className="flex justify-center mb-4">
                       {Array.from({ length: 5 }).map((_, i) => (
@@ -335,10 +415,11 @@ export default function Home() {
                       ))}
                     </div>
                     <p className="mb-4 italic text-muted-foreground">
-                      "Els dolços de Dàtil són increïbles! No es nota gens que no porten sucre, i són perfectes per a la
-                      meva dieta."
+                      {testimonial.quote}
                     </p>
-                    <p className="font-medium text-datil-brown">Marta A.</p>
+                    <p className="font-medium text-datil-brown">
+                      {testimonial.name}
+                    </p>
                   </CardContent>
                 </Card>
               ))}
@@ -355,22 +436,24 @@ export default function Home() {
                   Contacta&apos;ns
                 </h2>
                 <p className="text-muted-foreground mb-8">
-                  Si tens alguna pregunta o vols fer un encàrrec, no dubtis en contactar-nos. Estarem encantats
-                  d&apos;ajudar-te!
+                  Si tens alguna pregunta o vols fer un encàrrec, no dubtis en
+                  contactar-nos. Estarem encantats d&apos;ajudar-te!
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <MapPin className="h-5 w-5 text-datil-yellow mt-0.5" />
                     <div>
                       <h3 className="font-medium">Ubicació</h3>
-                      <p className="text-muted-foreground">Barcelona, Catalunya</p>
+                      <p className="text-muted-foreground">Tiana, Catalunya</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Mail className="h-5 w-5 text-datil-yellow mt-0.5" />
                     <div>
                       <h3 className="font-medium">Email</h3>
-                      <p className="text-muted-foreground">datilbyhelen@gmail.com</p>
+                      <p className="text-muted-foreground">
+                        datilbyhelen@gmail.com
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -383,7 +466,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="bg-datil-beige/30 p-8 rounded-lg">
-                <h3 className="text-xl font-bold mb-4 text-datil-brown">Envia&apos;ns un missatge</h3>
+                <h3 className="text-xl font-bold mb-4 text-datil-brown">
+                  Envia&apos;ns un missatge
+                </h3>
                 <form className="space-y-4">
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div className="space-y-2">
@@ -433,10 +518,22 @@ export default function Home() {
         <div className="container flex flex-col gap-6 py-8 md:flex-row md:items-center md:justify-between md:py-12">
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-2">
-              <Image src="/images/logo.png" alt="Dàtil Logo" width={40} height={40} className="h-8 w-auto" />
-              <span className="font-serif text-xl font-bold text-datil-brown">DÀTIL</span>
+              <Image
+                src={`${
+                  process.env.NODE_ENV === "production" ? "/datilbyhelen" : ""
+                }/images/logo.png`}
+                alt="Dàtil Logo"
+                width={40}
+                height={40}
+                className="h-8 w-auto"
+              />
+              <span className="font-serif text-xl font-bold text-datil-brown">
+                DÀTIL
+              </span>
             </div>
-            <p className="text-sm text-muted-foreground">Rebosteria orgànica - Dolços ecològics i sense sucre</p>
+            <p className="text-sm text-muted-foreground">
+              Rebosteria orgànica - Dolços ecològics i sense sucre
+            </p>
           </div>
           <div className="flex gap-4">
             <Link
@@ -467,6 +564,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
-
