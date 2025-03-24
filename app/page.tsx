@@ -213,8 +213,7 @@ export default function Home() {
                         : ""
                     }/images/treballem.png`}
                     alt="Treballem per encàrrec"
-                    width={300}
-                    height={300}
+                    fill
                     className="object-contain"
                   />
                 </div>
