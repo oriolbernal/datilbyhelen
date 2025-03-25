@@ -31,7 +31,11 @@ export default function CakesPage() {
               <div className="overflow-hidden rounded-lg border shadow-sm">
                 <div className="relative aspect-square">
                   <Image
-                    src={cake.images[0] || "/placeholder.svg"}
+                    src={`${
+                      process.env.NODE_ENV === "production"
+                        ? "/datilbyhelen"
+                        : ""
+                    }${cake.images[0] || "/placeholder.svg"}`}
                     alt={cake.name}
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"

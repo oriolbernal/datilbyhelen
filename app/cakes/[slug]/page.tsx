@@ -37,7 +37,9 @@ export default async function CakeDetailPage({
           <div className="space-y-4">
             <div className="relative aspect-square overflow-hidden rounded-lg border bg-white">
               <Image
-                src={cakeDetails.images[0] || "/placeholder.svg"}
+                src={`${
+                  process.env.NODE_ENV === "production" ? "/datilbyhelen" : ""
+                }${cakeDetails.images[0] || "/placeholder.svg"}`}
                 alt={cakeDetails.name}
                 fill
                 className="object-cover"
@@ -51,7 +53,11 @@ export default async function CakeDetailPage({
                   className="relative aspect-square overflow-hidden rounded-md border bg-white"
                 >
                   <Image
-                    src={image || "/placeholder.svg"}
+                    src={`${
+                      process.env.NODE_ENV === "production"
+                        ? "/datilbyhelen"
+                        : ""
+                    }${image || "/placeholder.svg"}`}
                     alt={`${cakeDetails.name} - Vista ${index + 1}`}
                     fill
                     className="object-cover"
