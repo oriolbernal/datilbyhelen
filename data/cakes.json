@@ -4,23 +4,24 @@
     "name": "Bàsic",
     "slug": "pastis-basic",
     "price": "45,00€",
-    "description": "Pastís bàsic. Elaborat amb ingredients 100% ecològics i sense sucre refinat. Perfecte per a celebracions especials i aniversaris.",
-    "longDescription": [
-      "El nostre pastís bàsic és una delícia per als amants del dolç saludable. Elaborat amb cacau pur i endolcit amb dàtils, ofereix un sabor intens sense els efectes negatius del sucre refinat.",
-      "És un pa de pessic esponjós i humit que et sorprendrà.",
-      "Tots els nostres ingredients són 100% ecològics i de proximitat, seleccionats amb cura per garantir la màxima qualitat i sabor."
+    "description": [
+      "Si penses que menjar saludable vol dir renunciar al plaer, és que encara no has provat la nostra massa de pastís ecològica! Endolcida amb dàtils 100% naturals, aconsegueix aquell toc dolç sense una sola cullerada de sucre refinat.",
+      "Elaborada amb ingredients ecològics de primera qualitat, aquesta massa és suau, esponjosa i irresistible. Perfecta per a qualsevol tipus de farcit, personalitza el teu pastís!",
+      "🌿 Sense artificis, sense sucre refinat… només sabor pur i ecològic! 🍃"
     ],
     "images": [
       "/images/cakes/gabriela_1.jpeg",
       "/images/cakes/gabriela_2.jpeg"
     ],
-    "sizes": [
+    "sizes": ["1", "2", "3"],
+    "sizes2": [
       { "name": "Petit (6-8 persones)", "price": "45,00€" },
       { "name": "Mitjà (10-12 persones)", "price": "60,00€" },
       { "name": "Gran (15-18 persones)", "price": "75,00€" }
     ],
+    "fillings": ["1", "2", "3", "4", "5"],
     "flavors": ["Xocolata", "Vainilla", "Carbassó i Cacau", "Pastanaga"],
-    "allergens": ["Fruits secs", "Ou"],
+    "allergens": ["ous", "gluten"],
     "nutritionalInfo": "Sense sucre refinat, baix en greixos saturats, alt contingut en fibra."
   },
   {
@@ -28,20 +29,17 @@
     "name": "Avellana",
     "slug": "pastis-avellana",
     "price": "45,00€",
-    "description": "Pastís d'avellana. Elaborat amb ingredients 100% ecològics i sense sucre refinat. Perfecte per a celebracions especials i aniversaris.",
-    "longDescription": [
-      "El nostre pastís d'avellana és una delícia per als amants del dolç saludable. Elaborat amb cacau pur i endolcit amb dàtils, ofereix un sabor intens sense els efectes negatius del sucre refinat.",
-      "És un pa de pessic esponjós i humit que et sorprendrà.",
-      "Tots els nostres ingredients són 100% ecològics i de proximitat, seleccionats amb cura per garantir la màxima qualitat i sabor."
+    "description": [
+      "Massa de pastís ecològica d'avellanes endolcida amb dàtils 🌰✨",
+      "Preparat per un pastís irresistiblement bo i natural? La nostra massa d'avellanes ecològica endolcida amb dàtils és tot el que necessites per fer una festa de sabor! Les avellanes ecològiques aporten una textura suau i un sabor lleugerament torrat, mentre que els dàtils li donen la dolçor natural perfecta, sense sucres refinats.",
+      "Amb ingredients ecològics de màxima qualitat, aquesta massa és ideal per crear pastissos plens de sabor.",
+      "🌿 Un tros de natura, saludable i ple de sabor! 🍃"
     ],
     "images": ["/images/cakes/sienna_1.jpeg", "/images/cakes/sienna_2.jpeg"],
-    "sizes": [
-      { "name": "Petit (6-8 persones)", "price": "45,00€" },
-      { "name": "Mitjà (10-12 persones)", "price": "60,00€" },
-      { "name": "Gran (15-18 persones)", "price": "75,00€" }
-    ],
+    "sizes": ["1", "2", "3"],
+    "fillings": ["1", "2", "3", "4", "5"],
     "flavors": ["Xocolata", "Vainilla", "Carbassó i Cacau", "Pastanaga"],
-    "allergens": ["Fruits secs", "Ou"],
+    "allergens": ["ous", "gluten"],
     "nutritionalInfo": "Sense sucre refinat, baix en greixos saturats, alt contingut en fibra."
   },
   {
@@ -49,20 +47,17 @@
     "name": "Pastanaga",
     "slug": "pastis-pastanaga",
     "price": "45,00€",
-    "description": "Pastís de pastanaga. Elaborat amb ingredients 100% ecològics i sense sucre refinat. Perfecte per a celebracions especials i aniversaris.",
-    "longDescription": [
-      "El nostre pastís de pastanaga és una delícia per als amants del dolç saludable. Elaborat amb cacau pur i endolcit amb dàtils, ofereix un sabor intens sense els efectes negatius del sucre refinat.",
-      "És un pa de pessic esponjós i humit que et sorprendrà.",
-      "Tots els nostres ingredients són 100% ecològics i de proximitat, seleccionats amb cura per garantir la màxima qualitat i sabor."
+    "description": [
+      "Massa de pastís ecològica de pastanaga endolcida amb dàtils 🥕✨",
+      "Prepara’t per a una explosió de sabor natural amb la nostra massa de pastís ecològica de pastanaga, endolcida amb dàtils que aporten una dolçor delicada i totalment natural, sense necessitat de sucres refinats. Aquesta combinació perfecta de pastanaga fresca i dàtils crea una textura suau i humida, perfecte pel teu pastís.",
+      "Feta amb ingredients ecològics i farines integrals de la millor qualitat, aquesta massa és ideal per a un pastís saludable i ple de sabor.",
+      "🌿 Gaudeix d’un pastís dolç, nutritiu i totalment ecològic, com si vingués directament de la natura! 🍃"
     ],
     "images": ["/images/cakes/pastanaga.avif"],
-    "sizes": [
-      { "name": "Petit (6-8 persones)", "price": "45,00€" },
-      { "name": "Mitjà (10-12 persones)", "price": "60,00€" },
-      { "name": "Gran (15-18 persones)", "price": "75,00€" }
-    ],
+    "sizes": ["1", "2", "3"],
+    "fillings": ["1", "2", "3", "4", "5"],
     "flavors": ["Xocolata", "Vainilla", "Carbassó i Cacau", "Pastanaga"],
-    "allergens": ["Fruits secs", "Ou"],
+    "allergens": ["ous", "gluten"],
     "nutritionalInfo": "Sense sucre refinat, baix en greixos saturats, alt contingut en fibra."
   },
   {
@@ -70,11 +65,11 @@
     "name": "Carbassó i Cacau",
     "slug": "pastis-carbasso-cacau",
     "price": "45,00€",
-    "description": "Pastís de carbassó i cacau. Elaborat amb ingredients 100% ecològics i sense sucre refinat. Perfecte per a celebracions especials i aniversaris.",
-    "longDescription": [
-      "El nostre pastís de carbassó i cacau és una delícia per als amants del dolç saludable. Elaborat amb cacau pur i endolcit amb dàtils, ofereix un sabor intens sense els efectes negatius del sucre refinat.",
-      "És un pa de pessic esponjós i humit que et sorprendrà.",
-      "Tots els nostres ingredients són 100% ecològics i de proximitat, seleccionats amb cura per garantir la màxima qualitat i sabor."
+    "description": [
+      "Massa de pastís ecològica de carbassó i cacau endolcida amb dàtils 🎂🌿",
+      "Si creies que no es poden combinar verdura i xocolata, prepara’t per canviar d’opinió! La nostra massa de pastís ecològica de carbassó i cacau, endolcida amb dàtils, és una combinació inesperada però absolutament deliciosa. El carbassó aporta una textura suau i humida, mentre que el cacau ecològic li dóna aquell toc de xocolata tan irresistible, tot sense sucres refinats.",
+      "Amb ingredients ecològics de qualitat, aquesta massa és perfecta per a un pastís saludable i ple de sabor, ideal per a qui vol un postre nutritiu sense renunciar al plaer.",
+      "🌿 Un pastís sorprenent, saludable i totalment ecològic! 🍫🌱"
     ],
     "images": ["/images/cakes/julia_1.jpeg"],
     "sizes": [
@@ -82,8 +77,9 @@
       { "name": "Mitjà (10-12 persones)", "price": "60,00€" },
       { "name": "Gran (15-18 persones)", "price": "75,00€" }
     ],
+    "fillings": ["1", "2", "3", "4", "5"],
     "flavors": ["Xocolata", "Vainilla", "Carbassó i Cacau", "Pastanaga"],
-    "allergens": ["Fruits secs", "Ou"],
+    "allergens": ["ous", "gluten"],
     "nutritionalInfo": "Sense sucre refinat, baix en greixos saturats, alt contingut en fibra."
   },
   {
@@ -91,11 +87,11 @@
     "name": "Plàtan",
     "slug": "pastis-platan",
     "price": "45,00€",
-    "description": "Pastís de plàtan. Elaborat amb ingredients 100% ecològics i sense sucre refinat. Perfecte per a celebracions especials i aniversaris.",
-    "longDescription": [
-      "El nostre pastís de plàtan és una delícia per als amants del dolç saludable. Elaborat amb cacau pur i endolcit amb dàtils, ofereix un sabor intens sense els efectes negatius del sucre refinat.",
-      "És un pa de pessic esponjós i humit que et sorprendrà.",
-      "Tots els nostres ingredients són 100% ecològics i de proximitat, seleccionats amb cura per garantir la màxima qualitat i sabor."
+    "description": [
+      "Massa de pastís ecològica de plàtan 🍌✨",
+      "Descobreix la nostra massa de pastís ecològica de plàtan, una delícia natural que aporta una dolçor suau i una textura irresistiblement tendra, tot sense necessitat de sucres refinats. El plàtan madur, ple de sabor, fa que aquest pastís sigui perfecte per als amants d’un postre saludable però saborós.",
+      "Elaborada amb ingredients ecològics de màxima qualitat, aquesta massa és ideal per a pastissos lleugers, esponjosos i nutritius.",
+      "🌿 Un pastís senzill, natural i totalment ecològic, com ha de ser! 🍃"
     ],
     "images": ["/images/cakes/platan.jpg"],
     "sizes": [
@@ -103,8 +99,9 @@
       { "name": "Mitjà (10-12 persones)", "price": "60,00€" },
       { "name": "Gran (15-18 persones)", "price": "75,00€" }
     ],
+    "fillings": ["1", "2", "3", "4", "5"],
     "flavors": ["Xocolata", "Vainilla", "Carbassó i Cacau", "Pastanaga"],
-    "allergens": ["Fruits secs", "Ou"],
+    "allergens": ["ous", "gluten"],
     "nutritionalInfo": "Sense sucre refinat, baix en greixos saturats, alt contingut en fibra."
   }
 ]

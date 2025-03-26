@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "name": "Mascarpone",
+    "allergens": ["lactosa"]
+  },
+  {
+    "id": "2",
+    "name": "Nocciocao",
+    "allergens": ["avellana"]
+  },
+  {
+    "id": "3",
+    "name": "Nocciocao + Mascarpone",
+    "allergens": ["lactosa", "avellana"]
+  },
+  {
+    "id": "4",
+    "name": "Compota de poma",
+    "allergens": ["fructosa"]
+  },
+  {
+    "id": "5",
+    "name": "Crema de coco",
+    "allergens": ["coco"]
+  }
+]

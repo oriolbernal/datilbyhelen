@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "name": "NÚMERO",
+    "slug": "base-numerica",
+    "description": "Base amb forma de número.",
+    "sizes": [
+      { "name": "S (8-10 persones)", "price": "45,00€" },
+      { "name": "M (14-16 persones)", "price": "60,00€" },
+      { "name": "L (20-22 persones)", "price": "75,00€" }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "RODÓ (15 cm)",
+    "slug": "base-rodona-m",
+    "description": "Base amb forma rodona.",
+    "sizes": [
+      { "name": "S (4-6 persones)", "price": "45,00€" },
+      { "name": "M (10-12 persones)", "price": "60,00€" },
+      { "name": "L (16-18 persones)", "price": "75,00€" }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "RODÓ (20 cm)",
+    "slug": "base-rodona-l",
+    "description": "Base amb forma rodona.",
+    "sizes": [
+      { "name": "S (8-10 persones)", "price": "45,00€" },
+      { "name": "M (14-16 persones)", "price": "60,00€" },
+      { "name": "L (22-24 persones)", "price": "75,00€" }
+    ]
+  }
+]
