@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Bàsic",
+    "icon": "🎂",
     "slug": "pastis-basic",
     "price": "45,00€",
     "description": [
@@ -27,6 +28,7 @@
   {
     "id": 2,
     "name": "Avellana",
+    "icon": "🌰",
     "slug": "pastis-avellana",
     "price": "45,00€",
     "description": [
@@ -45,6 +47,7 @@
   {
     "id": 3,
     "name": "Pastanaga",
+    "icon": "🥕",
     "slug": "pastis-pastanaga",
     "price": "45,00€",
     "description": [
@@ -63,6 +66,7 @@
   {
     "id": 4,
     "name": "Carbassó i Cacau",
+    "icon": "🥒🍫",
     "slug": "pastis-carbasso-cacau",
     "price": "45,00€",
     "description": [
@@ -85,6 +89,7 @@
   {
     "id": 5,
     "name": "Plàtan",
+    "icon": "🍌",
     "slug": "pastis-platan",
     "price": "45,00€",
     "description": [

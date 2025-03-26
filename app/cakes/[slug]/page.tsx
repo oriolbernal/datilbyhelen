@@ -32,7 +32,7 @@ export default function CakeDetailPage({
         </Link>
         <div className="flex items-center space-x-4">
           <button className="text-datil-brown hover:text-datil-yellow transition-colors">
-            <Heart className="w-6 h-6" />
+            {cakeDetails.icon}
           </button>
         </div>
       </header>
