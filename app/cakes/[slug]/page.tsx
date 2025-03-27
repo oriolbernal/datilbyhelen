@@ -11,12 +11,14 @@ export function generateStaticParams(): { slug: string }[] {
   }));
 }
 
-export default function CakeDetailPage({
+export default async function CakeDetailPage({
   params,
 }: {
   params: { slug: string };
 }) {
-  const cakeDetails = cakes.find((cake) => cake.slug === params.slug);
+  const { slug } = await params;
+
+  const cakeDetails = cakes.find((cake) => cake.slug === slug);
 
   if (!cakeDetails) return <div>Pastís no trobat</div>;
 
@@ -84,39 +86,30 @@ export default function CakeDetailPage({
             </p>
           </div>
 
-          <p className="text-gray-600 leading-relaxed">
-            {cakeDetails.description.map((paragraph, index) => (
-              <p key={index} className="text-gray-700 mb-4 leading-relaxed">
-                {paragraph}
-              </p>
-            ))}
-          </p>
+          {cakeDetails.description.map((paragraph, index) => (
+            <p key={index} className="text-gray-700 mb-4 leading-relaxed">
+              {paragraph}
+            </p>
+          ))}
 
           <div className="space-y-4">
             <div>
               <h3 className="text-lg font-semibold text-datil-brown mb-3">
-                Forma del Pastís
+                Forma
               </h3>
               <div className="grid grid-cols-3 gap-3">
                 {shapes.map((shape, index) => (
-                  <label
-                    key={index}
-                    className={`
-                      border-2 rounded-lg p-3 text-center cursor-pointer transition-all
-                      ${
-                        index === 0
-                          ? "border-datil-yellow bg-datil-yellow/10 text-datil-brown"
-                          : "border-gray-200 hover:border-datil-yellow"
-                      }
-                    `}
-                  >
-                    <input
-                      type="radio"
-                      name="shape"
-                      className="hidden"
-                      defaultChecked={index === 0}
-                    />
-                    <span className="text-sm">{shape.name}</span>
+                  <label key={index} className="relative cursor-pointer">
+                    <input type="radio" name="shape" className="hidden peer" />
+                    <div
+                      className="border-2 rounded-xl p-4 text-center transition-all duration-300 ease-in-out
+        peer-checked:border-datil-yellow peer-checked:bg-datil-yellow/20 peer-checked:shadow-md
+        border-gray-300 hover:border-datil-yellow hover:scale-105"
+                    >
+                      <span className="text-md font-medium text-datil-brown">
+                        {shape.name}
+                      </span>
+                    </div>
                   </label>
                 ))}
               </div>
@@ -128,24 +121,21 @@ export default function CakeDetailPage({
               </h3>
               <div className="grid grid-cols-3 gap-3">
                 {fillings.map((filling, index) => (
-                  <label
-                    key={index}
-                    className={`
-                      border-2 rounded-lg p-3 text-center cursor-pointer transition-all
-                      ${
-                        index === 0
-                          ? "border-datil-yellow bg-datil-yellow/10 text-datil-brown"
-                          : "border-gray-200 hover:border-datil-yellow"
-                      }
-                    `}
-                  >
+                  <label key={index} className="relative cursor-pointer">
                     <input
                       type="radio"
                       name="filling"
-                      className="hidden"
-                      defaultChecked={index === 0}
+                      className="hidden peer"
                     />
-                    <span className="text-sm">{filling.name}</span>
+                    <div
+                      className="border-2 rounded-xl p-4 text-center transition-all duration-300 ease-in-out
+        peer-checked:border-datil-yellow peer-checked:bg-datil-yellow/20 peer-checked:shadow-md
+        border-gray-300 hover:border-datil-yellow"
+                    >
+                      <span className="text-md font-medium text-datil-brown">
+                        {filling.name}
+                      </span>
+                    </div>
                   </label>
                 ))}
               </div>
