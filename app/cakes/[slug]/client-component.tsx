@@ -115,6 +115,7 @@ export function CakeDetailClient({
               </div>
             </div>
 
+            {/* Modificar la parte de la galería de imágenes para corregir la navegación */}
             <div className="grid grid-cols-4 gap-4">
               {images.map((image, index) => (
                 <Link
@@ -135,6 +136,10 @@ export function CakeDetailClient({
                     if (!isClient) {
                       e.preventDefault();
                       setSelectedImage(image);
+                    } else {
+                      // Asegurarse de que la selección de imagen funcione correctamente
+                      setSelectedImage(image);
+                      setImageIndex(index);
                     }
                   }}
                 >
