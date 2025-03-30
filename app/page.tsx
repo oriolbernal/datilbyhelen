@@ -197,11 +197,11 @@ export default function Home() {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="font-serif text-xl font-bold text-datil-brown mb-2">
-                    Pa de pessic
+                    Pastissos
                   </h3>
                   <p className="text-muted-foreground">
-                    Pa de pessic de carbassó i cacau, humit i saborós, perfecte
-                    per a qualsevol moment del dia.
+                    Pastissos fets amb diferents masses i productes ecològica,
+                    perfecte per a celebrar.
                   </p>
                 </CardContent>
               </Card>
@@ -287,12 +287,11 @@ export default function Home() {
             </div>
 
             <div className="mt-12 flex justify-center">
-              <Button
-                className="bg-datil-yellow hover:bg-datil-yellow/90 text-white"
-                size="lg"
-              >
-                Fer un encàrrec
-              </Button>
+              <Link href="/cakes/" className="group">
+                <Button className="bg-datil-yellow hover:bg-datil-yellow/90 text-white">
+                  Demana el teu pastís
+                </Button>
+              </Link>
             </div>
           </div>
         </section>

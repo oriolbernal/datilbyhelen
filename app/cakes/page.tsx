@@ -290,7 +290,7 @@ export default function CakesPage() {
                 <span className="hidden md:inline">Email</span>
               </Link>
               <Link
-                href="tel:+34600000000"
+                href="tel:+34650797969"
                 className="bg-datil-beige/20 hover:bg-datil-beige/40 text-datil-brown p-3 rounded-full transition-colors flex items-center gap-2"
                 aria-label="Trucar per telèfon"
               >
