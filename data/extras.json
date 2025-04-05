@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Rodona petita (20 cm diametre)",
+    "slug": "base-rodona-m",
+    "description": "Base amb forma rodona.",
+    "allergens": ["Fruits secs", "Ou"]
+  },
+  {
+    "id": "2",
+    "name": "Rodona gran (25 cm diametre)",
+    "slug": "base-rodona-l",
+    "description": "Base amb forma rodona.",
+    "allergens": ["Fruits secs", "Ou"]
+  },
+  {
+    "id": "3",
+    "name": "Número",
+    "slug": "base-numerica",
+    "description": "Base amb forma de número.",
+    "allergens": ["Fruits secs", "Ou"]
+  }
+]

@@ -21,7 +21,6 @@
       { "name": "Gran (15-18 persones)", "price": "75,00€" }
     ],
     "fillings": ["1", "2", "3", "4", "5"],
-    "flavors": ["Xocolata", "Vainilla", "Carbassó i Cacau", "Pastanaga"],
     "allergens": ["ous", "gluten"],
     "nutritionalInfo": "Sense sucre refinat, baix en greixos saturats, alt contingut en fibra."
   },
@@ -40,7 +39,6 @@
     "images": ["/images/cakes/sienna_1.jpeg", "/images/cakes/sienna_2.jpeg"],
     "sizes": ["1", "2", "3"],
     "fillings": ["1", "2", "3", "4", "5"],
-    "flavors": ["Xocolata", "Vainilla", "Carbassó i Cacau", "Pastanaga"],
     "allergens": ["ous", "gluten"],
     "nutritionalInfo": "Sense sucre refinat, baix en greixos saturats, alt contingut en fibra."
   },
@@ -56,10 +54,15 @@
       "Feta amb ingredients ecològics i farines integrals de la millor qualitat, aquesta massa és ideal per a un pastís saludable i ple de sabor.",
       "🌿 Gaudeix d’un pastís dolç, nutritiu i totalment ecològic, com si vingués directament de la natura! 🍃"
     ],
-    "images": ["/images/cakes/pastanaga.avif"],
+    "images": [
+      "/images/cakes/pastanaga_1.jpeg",
+      "/images/cakes/pastanaga_2.jpeg",
+      "/images/cakes/pastanaga_3.jpeg",
+      "/images/cakes/pastanaga_4.jpeg",
+      "/images/cakes/pastanaga_5.jpeg"
+    ],
     "sizes": ["1", "2", "3"],
     "fillings": ["1", "2", "3", "4", "5"],
-    "flavors": ["Xocolata", "Vainilla", "Carbassó i Cacau", "Pastanaga"],
     "allergens": ["ous", "gluten"],
     "nutritionalInfo": "Sense sucre refinat, baix en greixos saturats, alt contingut en fibra."
   },
@@ -82,7 +85,6 @@
       { "name": "Gran (15-18 persones)", "price": "75,00€" }
     ],
     "fillings": ["1", "2", "3", "4", "5"],
-    "flavors": ["Xocolata", "Vainilla", "Carbassó i Cacau", "Pastanaga"],
     "allergens": ["ous", "gluten"],
     "nutritionalInfo": "Sense sucre refinat, baix en greixos saturats, alt contingut en fibra."
   },
@@ -105,7 +107,37 @@
       { "name": "Gran (15-18 persones)", "price": "75,00€" }
     ],
     "fillings": ["1", "2", "3", "4", "5"],
-    "flavors": ["Xocolata", "Vainilla", "Carbassó i Cacau", "Pastanaga"],
+    "allergens": ["ous", "gluten"],
+    "nutritionalInfo": "Sense sucre refinat, baix en greixos saturats, alt contingut en fibra."
+  },
+  {
+    "id": 6,
+    "name": "Mona de pasqua",
+    "icon": "🐣",
+    "slug": "pastis-mona",
+    "price": "45,00€",
+    "description": [
+      "Descobreix la nostra mona de Pasqua ecològica de xocolata, una delícia artesana que celebra la tradició amb un toc saludable i responsable. Amb una cobertura de xocolata negra pura i ingredients seleccionats amb cura, aquesta mona ofereix un sabor intens i una textura suau que enamora petits i grans.",
+      "Elaborada amb farines ecològiques, ous de gallines criades en llibertat i xocolata de comerç just, és perfecta per gaudir d’una Pasqua plena de dolçor sense renunciar a la qualitat ni als valors sostenibles.",
+      "🌿 Una mona autèntica, festiva i 100% ecològica, perquè celebrar també pot ser conscient! 🐣✨"
+    ],
+    "images": [
+      "/images/cakes/mona_1.jpeg",
+      "/images/cakes/mona_1.jpeg",
+      "/images/cakes/mona_2.jpeg",
+      "/images/cakes/mona_3.jpeg",
+      "/images/cakes/mona_4.jpeg",
+      "/images/cakes/mona_5.jpeg",
+      "/images/cakes/mona_6.jpeg",
+      "/images/cakes/mona_7.jpeg",
+      "/images/cakes/mona_8.jpeg",
+      "/images/cakes/mona_9.jpeg"
+    ],
+    "sizes": [
+      { "name": "Petit (6-8 persones)", "price": "45,00€" },
+      { "name": "Mitjà (10-12 persones)", "price": "60,00€" }
+    ],
+    "fillings": ["1", "2", "3", "4", "5"],
     "allergens": ["ous", "gluten"],
     "nutritionalInfo": "Sense sucre refinat, baix en greixos saturats, alt contingut en fibra."
   }
