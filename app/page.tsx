@@ -75,19 +75,23 @@ export default function Home() {
                   naturals i molt d&apos;amor.
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                  <Button
-                    className="bg-datil-yellow hover:bg-datil-yellow/90 text-white"
-                    size="lg"
-                  >
-                    Veure productes
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="border-datil-yellow text-datil-yellow hover:bg-datil-yellow/10"
-                    size="lg"
-                  >
-                    Contactar
-                  </Button>
+                  <Link href="/cakes/" className="group">
+                    <Button
+                      className="bg-datil-yellow hover:bg-datil-yellow/90 text-white"
+                      size="lg"
+                    >
+                      Veure pastissos
+                    </Button>
+                  </Link>
+                  <Link href="#contact" className="group">
+                    <Button
+                      variant="outline"
+                      className="border-datil-yellow text-datil-yellow hover:bg-datil-yellow/10"
+                      size="lg"
+                    >
+                      Contactar
+                    </Button>
+                  </Link>
                 </div>
               </div>
               <div className="relative">
